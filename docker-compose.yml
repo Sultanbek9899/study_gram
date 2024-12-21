@@ -1,0 +1,15 @@
+version: "3.8"
+
+
+services:
+  study_gram:
+    container_name: study_gram
+    build:
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - ./static/:/app/static/
+      - ./media/:/app/media/
+    ports:
+        - "8000:8000"

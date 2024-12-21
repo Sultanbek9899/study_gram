@@ -4,7 +4,7 @@ media/
 *.pyc
 pycache
 db.sqlite3
-
+staticfiles/
 
 
 venv/
